@@ -31,6 +31,6 @@ public class SplunkOperationsTestCase extends MuleArtifactFunctionalTestCase {
                                       .getMessage()
                                       .getPayload()
                                       .getValue());
-    assertThat(payloadValue, is("Using Configuration [configId] with Connection id [aValue:100]"));
+    assertThat(payloadValue, is("Using Configuration [configId] with Connection id [aValue:443]"));
   }
 }

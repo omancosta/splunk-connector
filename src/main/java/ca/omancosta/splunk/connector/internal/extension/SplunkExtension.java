@@ -1,5 +1,6 @@
-package ca.omancosta.splunk.connector.internal;
+package ca.omancosta.splunk.connector.internal.extension;
 
+import ca.omancosta.splunk.connector.internal.config.SplunkConfiguration;
 import org.mule.runtime.extension.api.annotation.Extension;
 import org.mule.runtime.extension.api.annotation.Configurations;
 import org.mule.runtime.extension.api.annotation.dsl.xml.Xml;

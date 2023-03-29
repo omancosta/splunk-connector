@@ -1,5 +1,6 @@
-package ca.omancosta.splunk.connector.internal;
+package ca.omancosta.splunk.connector.internal.connection.provider;
 
+import ca.omancosta.splunk.connector.internal.connection.SplunkConnection;
 import org.mule.runtime.api.connection.ConnectionException;
 import org.mule.runtime.extension.api.annotation.param.Parameter;
 import org.mule.runtime.extension.api.annotation.param.Optional;

@@ -1,7 +1,9 @@
-package ca.omancosta.splunk.connector.internal;
+package ca.omancosta.splunk.connector.internal.operations;
 
 import static org.mule.runtime.extension.api.annotation.param.MediaType.ANY;
 
+import ca.omancosta.splunk.connector.internal.config.SplunkConfiguration;
+import ca.omancosta.splunk.connector.internal.connection.SplunkConnection;
 import org.mule.runtime.extension.api.annotation.param.MediaType;
 import org.mule.runtime.extension.api.annotation.param.Config;
 import org.mule.runtime.extension.api.annotation.param.Connection;

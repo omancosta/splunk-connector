@@ -5,7 +5,7 @@
           http://www.mulesoft.org/schema/mule/splunk http://www.mulesoft.org/schema/mule/splunk/current/mule-splunk.xsd">
 
     <splunk:config name="config" configId="configId">
-        <splunk:connection requiredParameter="aValue" />
+        <splunk:connection host="aValue" />
     </splunk:config>
 
     <flow name="sayHiFlow">

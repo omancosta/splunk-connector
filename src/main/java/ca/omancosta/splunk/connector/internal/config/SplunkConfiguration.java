@@ -1,5 +1,7 @@
-package ca.omancosta.splunk.connector.internal;
+package ca.omancosta.splunk.connector.internal.config;
 
+import ca.omancosta.splunk.connector.internal.operations.SplunkOperations;
+import ca.omancosta.splunk.connector.internal.connection.provider.SplunkConnectionProvider;
 import org.mule.runtime.extension.api.annotation.Operations;
 import org.mule.runtime.extension.api.annotation.connectivity.ConnectionProviders;
 import org.mule.runtime.extension.api.annotation.param.Parameter;

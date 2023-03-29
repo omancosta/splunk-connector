@@ -1,6 +1,4 @@
-package ca.omancosta.splunk.connector.internal;
-
-
+package ca.omancosta.splunk.connector.internal.connection;
 
 public final class SplunkConnection {
 
