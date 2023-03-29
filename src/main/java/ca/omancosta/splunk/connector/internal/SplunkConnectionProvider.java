@@ -28,23 +28,18 @@ public class SplunkConnectionProvider implements PoolingConnectionProvider<Splun
 
   private final Logger LOGGER = LoggerFactory.getLogger(SplunkConnectionProvider.class);
 
- /**
-  * A parameter that is always required to be configured.
-  */
+  @DisplayName("Host")
   @Parameter
-  private String requiredParameter;
+  private String host;
 
- /**
-  * A parameter that is not required to be configured by the user.
-  */
-  @DisplayName("Friendly Name")
+  @DisplayName("Port")
   @Parameter
-  @Optional(defaultValue = "100")
-  private int optionalParameter;
+  @Optional(defaultValue = "443")
+  private int port;
 
   @Override
   public SplunkConnection connect() throws ConnectionException {
-    return new SplunkConnection(requiredParameter + ":" + optionalParameter);
+    return new SplunkConnection(host + ":" + port);
   }
 
   @Override

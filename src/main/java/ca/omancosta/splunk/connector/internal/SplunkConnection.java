@@ -1,9 +1,7 @@
 package ca.omancosta.splunk.connector.internal;
 
 
-/**
- * This class represents an extension connection just as example (there is no real connection with anything here c:).
- */
+
 public final class SplunkConnection {
 
   private final String id;
