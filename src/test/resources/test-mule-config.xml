@@ -1,0 +1,19 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:splunk="http://www.mulesoft.org/schema/mule/splunk"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/splunk http://www.mulesoft.org/schema/mule/splunk/current/mule-splunk.xsd">
+
+    <splunk:config name="config" configId="configId">
+        <splunk:connection requiredParameter="aValue" />
+    </splunk:config>
+
+    <flow name="sayHiFlow">
+        <splunk:say-hi person="Mariano Gonzalez"/>
+    </flow>
+
+    <flow name="retrieveInfoFlow">
+        <splunk:retrieve-info config-ref="config"/>
+    </flow>
+
+</mule>
