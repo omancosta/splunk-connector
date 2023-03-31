@@ -29,6 +29,9 @@
             <id>splunk-artifactory</id>
             <name>Splunk Releases</name>
             <url>https://splunk.jfrog.io/splunk/ext-releases-local</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
         </pluginRepository>
         <pluginRepository>
             <id>mulesoft-releases</id>
