@@ -38,9 +38,13 @@ public class SplunkConnectionProvider implements PoolingConnectionProvider<Splun
   @Optional(defaultValue = "443")
   private int port;
 
+  @DisplayName("Token")
+  @Parameter
+  private String token;
+
   @Override
   public SplunkConnection connect() throws ConnectionException {
-    return new SplunkConnection(host + ":" + port);
+    return new SplunkConnection(host,port,token);
   }
 
   @Override
@@ -48,7 +52,7 @@ public class SplunkConnectionProvider implements PoolingConnectionProvider<Splun
     try {
       connection.invalidate();
     } catch (Exception e) {
-      LOGGER.error("Error while disconnecting [" + connection.getId() + "]: " + e.getMessage(), e);
+      LOGGER.error("Error while disconnecting. " + e.getMessage(), e);
     }
   }
 

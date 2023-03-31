@@ -16,21 +16,11 @@ public class SplunkOperationsTestCase extends MuleArtifactFunctionalTestCase {
   }
 
   @Test
-  public void executeSayHiOperation() throws Exception {
-    String payloadValue = ((String) flowRunner("sayHiFlow").run()
+  public void searchOperation() throws Exception {
+   /* String payloadValue = ((String) flowRunner("sayHiFlow").run()
                                       .getMessage()
                                       .getPayload()
                                       .getValue());
-    assertThat(payloadValue, is("Hello Mariano Gonzalez!!!"));
-  }
-
-  @Test
-  public void executeRetrieveInfoOperation() throws Exception {
-    String payloadValue = ((String) flowRunner("retrieveInfoFlow")
-                                      .run()
-                                      .getMessage()
-                                      .getPayload()
-                                      .getValue());
-    assertThat(payloadValue, is("Using Configuration [configId] with Connection id [aValue:443]"));
+    assertThat(payloadValue, is("Hello Mariano Gonzalez!!!"));*/
   }
 }

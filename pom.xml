@@ -30,5 +30,10 @@
             <name>Splunk Releases</name>
             <url>https://splunk.jfrog.io/splunk/ext-releases-local</url>
         </repository>
+        <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Releases</name>
+            <url>https://repository.mulesoft.org/releases/</url>
+        </repository>
     </repositories>
 </project>

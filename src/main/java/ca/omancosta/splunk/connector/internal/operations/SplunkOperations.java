@@ -14,12 +14,17 @@ import org.mule.runtime.extension.api.annotation.param.Connection;
  */
 public class SplunkOperations {
 
+  @MediaType(value = ANY, strict = false)
+  public String search(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection){
+    return "";
+  }
+
   /**
    * Example of an operation that uses the configuration and a connection instance to perform some action.
    */
   @MediaType(value = ANY, strict = false)
   public String retrieveInfo(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection){
-    return "Using Configuration [" + configuration.getConfigId() + "] with Connection id [" + connection.getId() + "]";
+    return "";
   }
 
   /**

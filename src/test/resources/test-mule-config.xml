@@ -4,16 +4,7 @@
       xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
           http://www.mulesoft.org/schema/mule/splunk http://www.mulesoft.org/schema/mule/splunk/current/mule-splunk.xsd">
 
-    <splunk:config name="config" configId="configId">
-        <splunk:connection host="aValue" />
+    <splunk:config name="config">
+        <splunk:connection host="aValue" token="aValue"/>
     </splunk:config>
-
-    <flow name="sayHiFlow">
-        <splunk:say-hi person="Mariano Gonzalez"/>
-    </flow>
-
-    <flow name="retrieveInfoFlow">
-        <splunk:retrieve-info config-ref="config"/>
-    </flow>
-
 </mule>

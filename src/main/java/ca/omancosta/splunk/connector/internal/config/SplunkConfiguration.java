@@ -13,11 +13,4 @@ import org.mule.runtime.extension.api.annotation.param.Parameter;
 @Operations(SplunkOperations.class)
 @ConnectionProviders(SplunkConnectionProvider.class)
 public class SplunkConfiguration {
-
-  @Parameter
-  private String configId;
-
-  public String getConfigId(){
-    return configId;
-  }
 }
