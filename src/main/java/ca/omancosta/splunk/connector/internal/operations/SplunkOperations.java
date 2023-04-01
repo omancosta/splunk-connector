@@ -26,19 +26,4 @@ public class SplunkOperations {
   public String retrieveInfo(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection){
     return "";
   }
-
-  /**
-   * Example of a simple operation that receives a string parameter and returns a new string message that will be set on the payload.
-   */
-  @MediaType(value = ANY, strict = false)
-  public String sayHi(String person) {
-    return buildHelloMessage(person);
-  }
-
-  /**
-   * Private Methods are not exposed as operations
-   */
-  private String buildHelloMessage(String person) {
-    return "Hello " + person + "!!!";
-  }
 }
