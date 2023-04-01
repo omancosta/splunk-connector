@@ -1,12 +1,8 @@
 # Splunk Connector
 
-...
+[![CodeQL](https://github.com/omancosta/splunk-connector/actions/workflows/codeql.yml/badge.svg)](https://github.com/omancosta/splunk-connector/actions/workflows/codeql.yml)
 
-
-...
-
-
-...
+Under development.
 
 
 Add this dependency to your application pom.xml
