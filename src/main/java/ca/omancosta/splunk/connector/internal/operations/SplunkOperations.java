@@ -15,8 +15,8 @@ import org.mule.runtime.extension.api.annotation.param.Connection;
 public class SplunkOperations {
 
   @MediaType(value = ANY, strict = false)
-  public String search(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection){
-    return "";
+  public String search(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection, String query){
+    return connection.getSplunkService().search(query).values().toString();
   }
 
   /**
