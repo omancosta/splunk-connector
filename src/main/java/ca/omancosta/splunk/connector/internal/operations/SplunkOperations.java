@@ -23,9 +23,19 @@ public class SplunkOperations {
     Job searchJob = args == null ? connection.getSplunkService().search(query) : connection.getSplunkService().search(query,args);
     return searchJob.values().toString();
   }
-
   @MediaType(value = ANY, strict = false)
   public String getJobs(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection) {
     return connection.getSplunkService().getJobs().toString();
   }
+
+  @MediaType(value = ANY, strict = false)
+  public String getIndexes(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection) {
+    return connection.getSplunkService().getIndexes().toString();
+  }
+
+  @MediaType(value = ANY, strict = false)
+  public String getSavedSearches(@Config SplunkConfiguration configuration, @Connection SplunkConnection connection) {
+    return connection.getSplunkService().getSavedSearches().toString();
+  }
+
 }
